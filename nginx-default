@@ -1,0 +1,16 @@
+server {
+	location = / {
+		try_files @site @site;
+	}
+	location / {
+		try_files $uri $uri/ @site;
+	}
+	location ~ \.php$ {
+		return 404;
+	}
+	location @site {
+		fastcgi_pass   unix:/var/run/php5-fpm.sock;
+		include fastcgi_params;
+		fastcgi_param  SCRIPT_FILENAME /var/www/web/index.php;
+	}
+}

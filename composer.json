@@ -1,0 +1,11 @@
+{
+    "require": {
+        "silex/silex": "~1.2",
+        "twig/twig": "~1.18",
+        "phpunit/phpunit": "~4.6",
+        "guzzlehttp/guzzle": "~5.0",
+        "sabre/vobject": "~3.3",
+        "symfony/twig-bridge": "~2.6",
+        "symfony/translation": "~2.6"
+    }
+}

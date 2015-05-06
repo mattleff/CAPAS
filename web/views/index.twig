@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<h1>{{ "CAPAS"|trans }} <small>{{ "The Calendar-Aware Public Appointment Scheduler"|trans }}</small></h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-9">
+			<div class="embed-responsive embed-responsive-4by3">
+				<iframe src="https://www.google.com/calendar/embed?src={{ calendar_id|url_encode }}&ctz=America/Denver" style="border: 0" frameborder="0" scrolling="no"></iframe>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<h3>{{ "Schedule Appointment"|trans }}</h3>
+			<script type="text/javascript" src="https://mattleff.formstack.com/forms/js.php?{{ form_id }}-ha0zwruV18-v3"></script>
+			<div style="text-align:right; font-size:x-small;">
+				<a href="http://www.formstack.com?utm_source=jsembed&utm_medium=product&utm_campaign=product+branding&fa=h,{{ form_id }}" title="Online Form Creator">Online Form Creator</a>
+			</div>
+		</div>
+	</div>
+</div>
